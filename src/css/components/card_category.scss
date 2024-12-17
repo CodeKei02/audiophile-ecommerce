@@ -1,0 +1,252 @@
+@import '../variables';
+
+.card_btn{
+    @include btn-see-product($clr-white, $clr-orange, transparent);
+}
+
+.header-h1{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.75rem;
+    line-height: 1.33;
+    font-weight: 700;
+    background-color: #191919;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    color: $clr-white;
+    text-align: center;
+}
+
+.cards-container{
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+
+    .card-product{
+        min-height: 45.25rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        margin-bottom: 2.5rem;
+
+        .card-image{
+            width: 20.438rem;
+            height: 22rem;
+            background-size: cover;
+            background-position: center;
+            border-radius: 0.5rem;
+            margin: 0 auto;
+        }
+
+        .card-image-headphones-1{
+            background-image: url('/src/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg');
+        }
+
+        .card-image-headphones-2{
+            background-image: url('/src/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg');
+        }
+
+        .card-image-headphones-3{
+            background-image: url('/src/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg');
+        }
+
+        .card-image-speakers-1{
+            background-image: url('/src/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg');
+        }
+
+        .card-image-speakers-2{
+            background-image: url('/src/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg');
+        }
+
+        .card-image-earphones{
+            background-image: url('/src/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg');
+        }
+
+        .card-body{
+            min-width: 20.438rem;
+            height: 21.25rem;
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+
+            .card-text{
+                letter-spacing: 0.625rem;
+                text-transform: uppercase;
+                color: $clr-orange;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            .card-title{
+                margin-top: 1rem;
+                font-size: 1.75rem;
+                letter-spacing: 0.063rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+
+            .card-paragraph{
+                line-height: 1.563rem;
+                opacity: 50%;
+                font-weight: 500;
+                font-size: 0.89rem;
+                max-width: 572px;
+            }
+
+            .card-price{
+                font-size: 13px;
+                font-weight: 800;
+                letter-spacing: 1.29px;
+            }
+
+            .card_product_btns{
+                display: flex;
+                align-items: center;
+                margin-top: 1rem;
+                column-gap: 1rem;
+
+                .card_count_container{
+                    background-color: $clr-light-gray;
+                    width: 128px;
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-inline: 1rem;
+
+                    .count-btn{
+                        font-size: 13px;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 786px){
+    .header-h1{
+        font-size: 2.5rem;
+        letter-spacing: 0.0894rem;
+        padding-top: 6.5625rem;
+        padding-bottom: 6.0625rem;
+    }
+
+    .cards-container .card-product{
+        text-align: center;
+
+        .card-image{
+            width: 43.063rem;
+        }
+
+        .card-image-headphones-1{
+            background-image: url('/src/assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg');
+        }
+
+        .card-image-headphones-2{
+            background-image: url('/src/assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg');
+        }
+
+        .card-image-headphones-3{
+            background-image: url('/src/assets/product-xx59-headphones/tablet/image-category-page-preview.jpg');
+        }
+
+        .card-image-speakers-1{
+            background-image: url('/src/assets/product-zx9-speaker/tablet/image-category-page-preview.jpg');
+        }
+
+        .card-image-speakers-2{
+            background-image: url('/src/assets/product-zx7-speaker/tablet/image-category-page-preview.jpg');
+        }
+
+        .card-image-earphones{
+            background-image: url('/src/assets/product-yx1-earphones/tablet/image-category-page-preview.jpg');
+        }
+
+        .card-body {
+            align-items: center;
+            text-align: center;
+
+        .card-title{
+            font-size: 2.5rem;
+            line-height: 2.75rem;
+            }
+        }
+        
+        
+    } 
+}
+
+@media screen and (min-width: 1023px) {
+    .cards-container {
+        text-align: left;
+        margin-bottom: 12rem;
+
+        .card-product{
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+            column-gap: 4rem;
+            min-height: 35rem;
+            margin-bottom: 8rem;
+
+            .card-image{
+                width: 33.75rem;
+                height: 560px;
+            }
+    
+            .card-image-headphones-1{
+                background-image: url('/src/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg');
+            }
+    
+            .card-image-headphones-2{
+                background-image: url('/src/assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg');
+            }
+    
+            .card-image-headphones-3{
+                background-image: url('/src/assets/product-xx59-headphones/desktop/image-category-page-preview.jpg');
+            }
+
+            .card-image-speakers-1{
+                background-image: url('/src/assets/product-zx9-speaker/desktop/image-category-page-preview.jpg');
+            }
+    
+            .card-image-speakers-2{
+                background-image: url('/src/assets/product-zx7-speaker/desktop/image-category-page-preview.jpg');
+            }
+
+            .card-image-earphones{
+                background-image: url('/src/assets/product-yx1-earphones/desktop/image-category-page-preview.jpg');
+            }
+    
+            .card-body {
+                text-align: left;
+                align-items: flex-start;
+                row-gap: .5rem;
+                max-width: 27.813rem;
+                
+                .card-title{
+                    font-size: 2.5rem;
+                    line-height: 2.75rem;
+                }
+
+                .card_btn:hover{
+                    background-color: $clr-light-gray;
+                }
+            }
+        }
+
+        .card-product-reverse{
+            .card-image{
+                grid-column: 2/ -1;
+                grid-row: 2/1;
+            }
+
+            .card-body{
+                grid-column: 1/2;
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+@import "../variables.scss";
+
+
+.suggested_products_container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.title, .suggested_product-name{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.054rem;
+}
+
+.suggested_products{
+    min-height: 52.438rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+
+    .suggested_product{
+        min-height: 265px;
+        width: 327px;
+        text-align: center;
+
+
+        .background{
+            border-radius: 10px;
+            min-height: 120px;
+            background-color: $clr-light-gray;
+            
+
+            .suggested_product_image{
+                width: 80px;
+                height: 120px;
+                margin: 0 auto;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .suggested_product_image-headphones-1{
+                background-image: url('/src/assets/shared/mobile/image-xx99-mark-one-headphones.jpg');
+            }
+
+            .suggested_product_image-headphones-2{
+                background-image: url('/src/assets/shared/mobile/image-xx99-mark-two-headphones.jpg');
+            }
+
+            .suggested_product_image-headphones-3{
+                background-image: url('/src/assets/shared/desktop/image-xx59-headphones.jpg');
+            }
+
+            .suggested_product_image-speaker-1{
+                background-image: url('/src/assets/shared/mobile/image-zx9-speaker.jpg');
+            }
+
+            .suggested_product_image-speaker-2{
+                background-image: url('/src/assets/shared/mobile/image-zx7-speaker.jpg');
+            }
+        }
+
+        .suggested_product_content{
+            place-self: center;
+            margin-top: 1.5rem;
+            
+            .product_btn{
+                margin-top: 1rem;
+                place-self: center;
+                @include btn-see-product($clr-white, $clr-orange, transparent);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 786px){
+    .suggested_products_container{
+        margin-top: 7rem;
+    }
+
+    .suggested_products{
+        min-height: 0;
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+        flex-direction: row;
+        column-gap: 1rem;
+
+        .suggested_product{
+            height: 471px;
+            width: 223px;
+            
+            .background{
+                min-height: 318px;
+
+                .suggested_product_image{
+                    width: 100%;
+                    height: 300px;
+                }
+
+                .suggested_product_image-headphones-1{
+                    background-image: url('/src/assets/shared/tablet/image-xx99-mark-one-headphones.jpg');
+                }
+    
+                .suggested_product_image-headphones-2{
+                    background-image: url('/src/assets/shared/tablet/image-xx99-mark-two-headphones.jpg');
+                }
+    
+                .suggested_product_image-headphones-3{
+                    background-image: url('/src/assets/shared/tablet/image-xx59-headphones.jpg');
+                }
+
+                .suggested_product_image-speaker-1{
+                    background-image: url('/src/assets/shared/tablet/image-zx9-speaker.jpg');
+                }
+    
+                .suggested_product_image-speaker-2{
+                    background-image: url('/src/assets/shared/tablet/image-zx7-speaker.jpg');
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .suggested_products .suggested_product{
+        height: 471px;
+        width: 350px;
+
+        .background {
+            
+            .suggested_product_image-headphones-1{
+                background-image: url('/src/assets/shared/desktop/image-xx99-mark-one-headphones.jpg');
+            }
+
+            .suggested_product_image-headphones-2{
+                background-image: url('/src/assets/shared/desktop/image-xx99-mark-two-headphones.jpg');
+            }
+
+            .suggested_product_image-headphones-3{
+                background-image: url('/src/assets/shared/desktop/image-xx59-headphones.jpg');
+            }
+
+            .suggested_product_image-speaker-1{
+                background-image: url('/src/assets/shared/desktop/image-zx9-speaker.jpg');
+            }
+
+            .suggested_product_image-speaker-2{
+                background-image: url('/src/assets/shared/desktop/image-zx7-speaker.jpg');
+            }
+        }
+    }
+}
