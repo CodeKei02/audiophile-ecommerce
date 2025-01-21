@@ -1,5 +1,5 @@
 import { CheckoutForm, Summary, Modal, Overlay, useShowCart } from "../index";
-import "../css/checkout/checkout.css";
+import "../../src/css/checkout/checkout.css";
 
 export const CheckoutPage = () => {
   const { showCart, handleShowCart } = useShowCart();
@@ -10,7 +10,7 @@ export const CheckoutPage = () => {
       <Summary handleShowModal={handleShowCart} />
       <Modal display={showCart} />
 
-      {showCart && <Overlay display="overlay-active"/>}
+      {showCart && <Overlay display="overlay-active" />}
     </div>
   );
 };
