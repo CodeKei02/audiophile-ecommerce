@@ -1,23 +1,30 @@
-import { useState } from "react";
+import { useCart } from "./useCart";
 
-export const useCounter = (initialValue = 0) => {
-  const [counter, setCounter] = useState(initialValue);
+export const useCounter = () => {
+  const { dispatch } = useCart();
 
-  const increment = () => {
-    setCounter(counter + 1);
+  const increaseItem = (id, quantity = 1) => {
+    dispatch({
+      type: "INCREASE_QUANTITY",
+      payload: {
+        id,
+        quantity,
+      },
+    });
   };
 
-  const decrement = () => {
-    if (counter === 0) {
-      return 0;
-    }
-
-    setCounter(counter - 1);
+  const decreaseItem = (id, quantity = 1) => {
+    dispatch({
+      type: "DECREASE_QUANTITY",
+      payload: {
+        id,
+        quantity,
+      },
+    });
   };
 
-  return{
-    counter,
-    increment,
-    decrement
+  return {
+    increaseItem,
+    decreaseItem
   }
 };

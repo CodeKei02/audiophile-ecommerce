@@ -2,10 +2,11 @@
 /*COLORS*/
 $clr-orange: #D87D4A;
 $clr-light-black: #101010;
-$clr-light-gray: #F1F1F1;
 $clr-very-light-gray: #FAFAFA;
 $clr-light-orange: #fbaf85;
 $clr-white: #FFFFFF;
+$clr-light-gray: #F1F1F1;
+$clr-white-body: #F2F2F2;
 $clr-black: #000000;
 $clr-gray: #4C4C4C;
 $clr-linear-gradient: rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5);
@@ -15,6 +16,10 @@ $font-family: "Manrope", sans-serif;
 
 *{
     font-family: $font-family;
+}
+
+body{
+    background-color: $clr-white-body;
 }
 
 .page-container{
@@ -47,6 +52,24 @@ $font-family: "Manrope", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin form-input{
+    min-width: 280px;
+    height: 56px;
+    border: 1px solid $clr-gray;
+    padding-inline: 1rem;
+    border-radius: .5rem;
+    font-weight: 700;
+    opacity: 70%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+@mixin form-input-focus{
+    border-color: $clr-orange;
+    outline: none;
+    box-shadow: 0 0 5px $clr-orange;
 }
 
 @mixin form-elements($borderColor){

@@ -1,0 +1,30 @@
+@import "../variables";
+
+.buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    column-gap: 1rem;
+    cursor: pointer;
+
+    .count_buttons{
+        background-color: #F1F1F1;
+        border: 1px dashed rgba(0, 0, 0, 0.1);
+        width: 128px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 1rem;
+
+        .button:hover{
+            color: $clr-orange;
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
+    }
+
+    .count_buttons:hover{
+        border: 1px dashed green;
+    }
+}

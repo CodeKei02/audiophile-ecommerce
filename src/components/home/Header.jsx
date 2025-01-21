@@ -12,7 +12,7 @@ export const Header = () => {
             made for the passionate music enthusiast.
           </p>
           <Link
-            to="/headphones/xx99-mark-II-headphones"
+            to="/headphones/xx99-mark-ii"
             className="header-btn-headphones"
           >
             See product

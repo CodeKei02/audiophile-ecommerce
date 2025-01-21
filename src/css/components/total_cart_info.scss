@@ -1,0 +1,21 @@
+@import "../variables";
+
+
+.cart-total-info{
+    display: flex;
+    justify-content: space-between;
+
+    .subtitle{
+        text-transform: uppercase;
+        font-size: 15px;
+        opacity: 50%;
+    }
+
+    p{
+        font-weight: 700;
+    }
+}
+.button-continue{
+    @include btn-see-product($clr-white, $clr-orange, transparent);
+    width: 100%;
+}

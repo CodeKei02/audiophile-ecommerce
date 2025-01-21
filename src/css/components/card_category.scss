@@ -1,10 +1,10 @@
 @import '../variables';
 
-.card_btn{
+.btn{
     @include btn-see-product($clr-white, $clr-orange, transparent);
 }
 
-.header-h1{
+.category-banner{
     padding-top: 2rem;
     padding-bottom: 2rem;
     font-size: 1.75rem;
@@ -17,52 +17,38 @@
     text-align: center;
 }
 
-.cards-container{
-    text-align: center;
+.productCard__container{
     margin-top: 5rem;
     margin-bottom: 2rem;
 
-    .card-product{
+    .productCard{
         min-height: 45.25rem;
         display: grid;
         grid-template-columns: 1fr;
         margin: 0 auto;
         margin-bottom: 2.5rem;
 
-        .card-image{
+        .productCard__image-frame{
             width: 20.438rem;
             height: 22rem;
-            background-size: cover;
-            background-position: center;
             border-radius: 0.5rem;
             margin: 0 auto;
         }
 
-        .card-image-headphones-1{
-            background-image: url('/src/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg');
+        .productCard__image{
+            width: 100%;
+            object-fit: cover;
         }
 
-        .card-image-headphones-2{
-            background-image: url('/src/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg');
+        .desktop-image{
+            display: none;
         }
 
-        .card-image-headphones-3{
-            background-image: url('/src/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg');
+        .tablet-image{
+            display: none;
         }
 
-        .card-image-speakers-1{
-            background-image: url('/src/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg');
-        }
-
-        .card-image-speakers-2{
-            background-image: url('/src/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg');
-        }
-
-        .card-image-earphones{
-            background-image: url('/src/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg');
-        }
-
-        .card-body{
+        .productCard__content{
             min-width: 20.438rem;
             height: 21.25rem;
             margin-top: 1.5rem;
@@ -70,7 +56,7 @@
             flex-direction: column;
             text-align: left;
 
-            .card-text{
+            .overline-orange{
                 letter-spacing: 0.625rem;
                 text-transform: uppercase;
                 color: $clr-orange;
@@ -78,7 +64,7 @@
                 font-size: 14px;
             }
 
-            .card-title{
+            .productCard__headline{
                 margin-top: 1rem;
                 font-size: 1.75rem;
                 letter-spacing: 0.063rem;
@@ -87,7 +73,7 @@
                 margin-bottom: 1rem;
             }
 
-            .card-paragraph{
+            p{
                 line-height: 1.563rem;
                 opacity: 50%;
                 font-weight: 500;
@@ -95,96 +81,56 @@
                 max-width: 572px;
             }
 
-            .card-price{
+            .productCard__price{
                 font-size: 13px;
                 font-weight: 800;
                 letter-spacing: 1.29px;
-            }
-
-            .card_product_btns{
-                display: flex;
-                align-items: center;
-                margin-top: 1rem;
-                column-gap: 1rem;
-
-                .card_count_container{
-                    background-color: $clr-light-gray;
-                    width: 128px;
-                    height: 48px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding-inline: 1rem;
-
-                    .count-btn{
-                        font-size: 13px;
-                        border: none;
-                    }
-                }
             }
         }
     }
 }
 
 @media screen and (min-width: 786px){
-    .header-h1{
+    .category-banner{
         font-size: 2.5rem;
         letter-spacing: 0.0894rem;
         padding-top: 6.5625rem;
         padding-bottom: 6.0625rem;
     }
 
-    .cards-container .card-product{
+    .productCard__container .productCard{
         text-align: center;
 
-        .card-image{
+        .productCard__image-frame{
             width: 43.063rem;
         }
 
-        .card-image-headphones-1{
-            background-image: url('/src/assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg');
+        .mobile-image{
+            display: none;
         }
 
-        .card-image-headphones-2{
-            background-image: url('/src/assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg');
+        .tablet-image{
+            display: block;
         }
 
-        .card-image-headphones-3{
-            background-image: url('/src/assets/product-xx59-headphones/tablet/image-category-page-preview.jpg');
-        }
-
-        .card-image-speakers-1{
-            background-image: url('/src/assets/product-zx9-speaker/tablet/image-category-page-preview.jpg');
-        }
-
-        .card-image-speakers-2{
-            background-image: url('/src/assets/product-zx7-speaker/tablet/image-category-page-preview.jpg');
-        }
-
-        .card-image-earphones{
-            background-image: url('/src/assets/product-yx1-earphones/tablet/image-category-page-preview.jpg');
-        }
-
-        .card-body {
+        .productCard__content {
             align-items: center;
             text-align: center;
 
-        .card-title{
+        .productCard__headline{
             font-size: 2.5rem;
             line-height: 2.75rem;
             }
         }
-        
-        
     } 
 }
 
 @media screen and (min-width: 1023px) {
-    .cards-container {
+    .productCard__container {
         text-align: left;
         margin-bottom: 12rem;
 
-        .card-product{
+        .productCard{
             grid-template-columns: repeat(2, 1fr);
             justify-content: center;
             align-items: center;
@@ -192,59 +138,45 @@
             min-height: 35rem;
             margin-bottom: 8rem;
 
-            .card-image{
+            .productCard__image-frame{
                 width: 33.75rem;
                 height: 560px;
             }
-    
-            .card-image-headphones-1{
-                background-image: url('/src/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg');
-            }
-    
-            .card-image-headphones-2{
-                background-image: url('/src/assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg');
-            }
-    
-            .card-image-headphones-3{
-                background-image: url('/src/assets/product-xx59-headphones/desktop/image-category-page-preview.jpg');
+
+            .tablet-image{
+                display: none;
             }
 
-            .card-image-speakers-1{
-                background-image: url('/src/assets/product-zx9-speaker/desktop/image-category-page-preview.jpg');
+            .desktop-image{
+                display: block;
             }
     
-            .card-image-speakers-2{
-                background-image: url('/src/assets/product-zx7-speaker/desktop/image-category-page-preview.jpg');
-            }
-
-            .card-image-earphones{
-                background-image: url('/src/assets/product-yx1-earphones/desktop/image-category-page-preview.jpg');
-            }
-    
-            .card-body {
+            .productCard__content {
                 text-align: left;
                 align-items: flex-start;
                 row-gap: .5rem;
                 max-width: 27.813rem;
                 
-                .card-title{
+                .productCard__headline{
                     font-size: 2.5rem;
                     line-height: 2.75rem;
                 }
 
-                .card_btn:hover{
+                .btn:hover{
                     background-color: $clr-light-gray;
                 }
             }
         }
 
-        .card-product-reverse{
-            .card-image{
+        .productCard:nth-last-of-type(2){
+            
+            .productCard__image{
                 grid-column: 2/ -1;
                 grid-row: 2/1;
             }
 
-            .card-body{
+            .productCard__content{
+                grid-row: 2/1;
                 grid-column: 1/2;
             }
         }

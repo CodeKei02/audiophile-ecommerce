@@ -16,7 +16,7 @@ export const FeaturedProducts = () => {
             truly remarkable sound.
           </p>
           <Link
-          to="/speakers/zx9-speaker"
+          to="/speakers/zx9"
            className="featured_product_btn">See Product</Link>
         </div>
       </div>
@@ -25,7 +25,7 @@ export const FeaturedProducts = () => {
         <div className="featured_product_text">
           <span className="featured_product_name">ZX7 speaker</span>
           <Link
-          to="/speakers/zx7-speaker"
+          to="/speakers/zx7"
           className="featured_product_btn">See Product</Link>
         </div>
       </div>
@@ -35,7 +35,7 @@ export const FeaturedProducts = () => {
         <div className="featured_product_text">
           <span className="featured_product_name">YX1 earphones</span>
           <Link 
-          to="/earphones/yx1-wireless-earphones"
+          to="/earphones/yx1-wireless"
           className="featured_product_btn">See Product</Link>
         </div>
       </div>
