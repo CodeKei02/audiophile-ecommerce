@@ -1,10 +1,10 @@
-import { useState } from "react";
 import {
   Button,
   QuantityButton,
   Overline,
   ProductHeadline
 } from "../../index";
+import "../../css/components/card_category.css"
 export const ProductCard = (props) => {
   const {
     linkTo,

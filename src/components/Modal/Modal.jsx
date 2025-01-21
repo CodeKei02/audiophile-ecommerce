@@ -16,6 +16,7 @@ export const Modal = (props) => {
     dispatch({ type: "CLEAR_LOCAL_STORAGE" });
   };
 
+
   return (
     <div className={`modal__container ${display ? "" : "d-none"}`}>
       <div className="modal__header">

@@ -14,6 +14,7 @@
     position: absolute;
     top: 150px;
     z-index: 100;
+    
 
     .modal__header {
         .modal__title{
@@ -81,5 +82,11 @@
         background-color: $clr-orange;
         color: $clr-white;
         opacity: 50%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .modal__container{
+        margin: 0 auto;
     }
 }
