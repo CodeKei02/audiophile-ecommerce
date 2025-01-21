@@ -1,5 +1,5 @@
 import { CheckoutForm, Summary, Modal, Overlay, useShowCart } from "../index";
-import "../../src/css/checkout/checkout.css";
+import "../css/checkout/checkout.css";
 
 export const CheckoutPage = () => {
   const { showCart, handleShowCart } = useShowCart();
