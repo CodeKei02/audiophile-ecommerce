@@ -30,7 +30,7 @@ export const CartIcon = (props) => {
           <h3 className="cart-empty">Your cart is empty</h3>
           <div className="cart-image">
             <img
-              src="/src/assets/shared/desktop/icon-cart-black.svg"
+              src="../../assets/shared/desktop/icon-cart-black.svg"
               alt="cartEmpty"
             />
           </div>
@@ -45,7 +45,11 @@ export const CartIcon = (props) => {
               Remove all
             </button>
           </div>
-          <ul className={`cart-product ${cart.items.length > 2 ? "overflow-y-scroll" : ""}`}>
+          <ul
+            className={`cart-product ${
+              cart.items.length > 2 ? "overflow-y-scroll" : ""
+            }`}
+          >
             {cart.items.map((item) => (
               <li key={item.id} className="cart-item">
                 <ListProductsCart item={item} />

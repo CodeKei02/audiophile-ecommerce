@@ -178,7 +178,7 @@ export const CheckoutForm = () => {
               {values.payment === "cash" && (
                 <div className="form__content">
                   <img
-                    src="/src/assets/checkout/icon-cash-on-delivery.svg"
+                    src="../../assets/checkout/icon-cash-on-delivery.svg"
                     alt="cash"
                   />
                   <p>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives 

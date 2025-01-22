@@ -5,7 +5,7 @@ import { useContext } from "react";
 
 export const Navigation = () => {
   const { showCart, handleShowCart } = useShowCart(false);
-  const {cart} = useContext(CartContext);
+  const { cart } = useContext(CartContext);
 
   return (
     <nav className={`navbar navbar-expand-lg fixed-top `}>
@@ -23,7 +23,7 @@ export const Navigation = () => {
 
           <a className="navbar-brand" href="#">
             <img
-              src="../../src/assets/shared/desktop/logo.svg"
+              src="../../assets/shared/desktop/logo.svg"
               className="nav-logo"
             ></img>
           </a>
@@ -120,9 +120,18 @@ export const Navigation = () => {
         </div>
         <div className="navbar_container-cart">
           <button onClick={handleShowCart} className="navbar_btn-cart">
-            <img src="../../src/assets/shared/desktop/icon-cart.svg" alt="" />
+            <img
+              src="../../assets/shared/desktop/icon-cart.svg"
+              alt="cartIcon"
+            />
           </button>
-          <div className={`navbar_items-cart ${cart.items.length > 0 ? "" : "d-none"}`}>{cart.items.length}</div>
+          <div
+            className={`navbar_items-cart ${
+              cart.items.length > 0 ? "" : "d-none"
+            }`}
+          >
+            {cart.items.length}
+          </div>
         </div>
       </div>
       <CartIcon display={showCart ? "" : "d-none"} />
