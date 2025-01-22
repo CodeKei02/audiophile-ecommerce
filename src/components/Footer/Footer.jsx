@@ -34,16 +34,16 @@ export const Footer = () => {
         <div className="footer_social-media">
           <a href="https://www.facebook.com" className="footer_fb">
             <img
-              src="/src/assets/shared/desktop/icon-facebook.svg"
+              src="./src/assets/shared/desktop/icon-facebook.svg"
               alt="facebook"
             />
           </a>
           <a href="https://www.twitter.com" className="footer_x">
-            <img src="/src/assets/shared/desktop/icon-x.png" alt="x" />
+            <img src="./src/assets/shared/desktop/icon-x.png" alt="x" />
           </a>
           <a href="https://www.instagram.com" className="footer_insta">
             <img
-              src="/src/assets/shared/desktop/icon-instagram.svg"
+              src="./src/assets/shared/desktop/icon-instagram.svg"
               alt="instagram"
             />
           </a>
