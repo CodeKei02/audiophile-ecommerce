@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { ListProductsCart, CartContext, } from "../../index";
 import "../../css/components/modal.css";
 import { Link } from "react-router-dom";
+import iconConfirmation from "../../../public/images/checkout/icon-order-confirmation.svg"
 export const Modal = (props) => {
   const { display } = props;
   const { cart, dispatch } = useContext(CartContext);
@@ -21,7 +22,7 @@ export const Modal = (props) => {
     <div className={`modal__container ${display ? "" : "d-none"}`}>
       <div className="modal__header">
         <img
-          src="/src/assets/checkout/icon-order-confirmation.svg"
+          src={iconConfirmation}
           alt="icon-confirmation"
         />
         <h1 className="modal__title title">
