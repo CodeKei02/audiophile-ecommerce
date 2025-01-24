@@ -2,7 +2,7 @@
 
 .header{
     height: 37.5rem;
-    background: url("./src/assets/home/mobile/image-header.jpg") top / cover;
+    background: url("../../../public/images/home/mobile/image-header.jpg") top / cover;
     background-repeat: no-repeat;
     color: $clr-white;
     background-size: 100% 100%;
@@ -60,7 +60,7 @@
 
 @media screen and (min-width: 450px){
     .header{
-        background: linear-gradient($clr-linear-gradient), url('./src/assets/home/tablet/image-header.jpg') center top / cover;
+        background: linear-gradient($clr-linear-gradient), url('../../../public/images/home/tablet/image-header.jpg') center top / cover;
         background-repeat: no-repeat;
         margin-top: -4rem;
         margin-bottom: 9.25rem;
@@ -92,7 +92,7 @@
 
 @media (min-width: 1023px){
     .header{
-        background-image: linear-gradient($clr-linear-gradient), url('./src/assets/home/desktop/image-hero.jpg');
+        background-image: linear-gradient($clr-linear-gradient), url('../../../public/images/home/desktop/image-hero.jpg');
         @include style-background-image(none);
         
 

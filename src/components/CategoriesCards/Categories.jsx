@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 import "../../css/components/categories.css";
+import imageCategory1 from "../../../public/images/shared/desktop/image-category-thumbnail-headphones.png"
+import imageCategory2 from "../../../public/images/shared/desktop/image-category-thumbnail-speakers.png"
+import imageCategory3 from "../../../public/images/shared/desktop/image-category-thumbnail-earphones.png"
 export const Categories = () => {
   return (
     <section className="categories">
 
       <div className="category">
-        <img src="../../src/assets/shared/desktop/image-category-thumbnail-headphones.png"/>
+        <img src={imageCategory1}/>
         <div className="category-content">
           <span className="category-name">Headphones</span>
           <button className="category-btn">
@@ -15,7 +18,7 @@ export const Categories = () => {
         </div>
       </div>
       <div className="category">
-      <img src="../../src/assets/shared/desktop/image-category-thumbnail-speakers.png"/>
+      <img src={imageCategory2}/>
         <div className="category-content">
           <span className="category-name">Speakers</span>
           <button className="category-btn">
@@ -25,7 +28,7 @@ export const Categories = () => {
         </div>
       </div>
       <div className="category">
-      <img src="../../src/assets/shared/desktop/image-category-thumbnail-earphones.png"/>
+      <img src={imageCategory3}/>
         <div className="category-content">
           <span className="category-name">Earphones</span>
           <button className="category-btn">

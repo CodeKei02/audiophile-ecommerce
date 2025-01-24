@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import { CartIcon, useShowCart, Overlay, CartContext } from "../../index";
 import "../../css/components/navbar.css";
 import { useContext } from "react";
+import buttonCartImage from "../../../public/images/shared/desktop/icon-cart.svg"
+import logo from "../../../public/images/shared/desktop/logo.svg"
 
 export const Navigation = () => {
   const { showCart, handleShowCart } = useShowCart(false);
@@ -23,7 +25,7 @@ export const Navigation = () => {
 
           <a className="navbar-brand" href="#">
             <img
-              src="../../assets/shared/desktop/logo.svg"
+              src={logo}
               className="nav-logo"
             ></img>
           </a>
@@ -121,7 +123,7 @@ export const Navigation = () => {
         <div className="navbar_container-cart">
           <button onClick={handleShowCart} className="navbar_btn-cart">
             <img
-              src="../../assets/shared/desktop/icon-cart.svg"
+              src={buttonCartImage}
               alt="cartIcon"
             />
           </button>

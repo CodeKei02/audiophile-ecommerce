@@ -1,5 +1,9 @@
 import { NavLink } from "react-router-dom";
 import "../../css/components/footer.css";
+import facebookImage from "../../../public/images/shared/desktop/icon-facebook.svg";
+import twitterImage from "../../../public/images/shared/desktop/icon-x.png.svg";
+import instaImage from "../../../public/images/shared/desktop/icon-instagram.svg";
+
 export const Footer = () => {
   return (
     <footer className="footer">
@@ -33,19 +37,13 @@ export const Footer = () => {
         <p className="footer_copyright">Copyright 2021. All Rights Reserved</p>
         <div className="footer_social-media">
           <a href="https://www.facebook.com" className="footer_fb">
-            <img
-              src="../../assets/shared/desktop/icon-facebook.svg"
-              alt="facebook"
-            />
+            <img src={facebookImage} alt="facebook" />
           </a>
           <a href="https://www.twitter.com" className="footer_x">
-            <img src="../../assets/shared/desktop/icon-x.png" alt="x" />
+            <img src={twitterImage} alt="x" />
           </a>
           <a href="https://www.instagram.com" className="footer_insta">
-            <img
-              src="../../src/assets/shared/desktop/icon-instagram.svg"
-              alt="instagram"
-            />
+            <img src={instaImage} alt="instagram" />
           </a>
         </div>
       </div>

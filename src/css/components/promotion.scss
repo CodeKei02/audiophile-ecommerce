@@ -2,7 +2,7 @@
 
 .promotion-image{
     min-height: 18.75rem;
-    background-image: url('../src/assets/shared/mobile/image-best-gear.jpg');
+    background-image: url('../../../public/images/shared/mobile/image-best-gear.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     margin-bottom: 3.125rem;
@@ -36,7 +36,7 @@
 
 @media (min-width: 768px){
     .promotion-image{
-        background-image: url('../src/assets/shared/tablet/image-best-gear.jpg');
+        background-image: url('../../../public/images/shared/tablet/image-best-gear.jpg');
         background-size: 102%;
         margin-bottom: 4.375rem;
     }
@@ -59,7 +59,7 @@
         .promotion-image {
             grid-column: 2;
             grid-row: 1 / -1;
-            background: url("../src/assets/shared/desktop/image-best-gear.jpg") center;
+            background: url("../../../public/images/shared/desktop/image-best-gear.jpg") center;
             background-size: 102%;
             margin-bottom: 0rem;
             min-height: 28.75rem;

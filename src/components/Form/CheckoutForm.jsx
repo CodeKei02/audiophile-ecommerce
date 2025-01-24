@@ -1,5 +1,6 @@
 import "../../css/components/form.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import imageCashOnDelivery from "../../../public/images/checkout/icon-cash-on-delivery.svg";
 export const CheckoutForm = () => {
   return (
     <>
@@ -177,19 +178,24 @@ export const CheckoutForm = () => {
               </div>
               {values.payment === "cash" && (
                 <div className="form__content">
-                  <img
-                    src="../../assets/checkout/icon-cash-on-delivery.svg"
-                    alt="cash"
-                  />
-                  <p>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives 
-                  at your residence. Just make sure your address is correct so that your order will not be cancelled.</p>
+                  <img src={imageCashOnDelivery} alt="cash" />
+                  <p>
+                    The ‘Cash on Delivery’ option enables you to pay in cash
+                    when our delivery courier arrives at your residence. Just
+                    make sure your address is correct so that your order will
+                    not be cancelled.
+                  </p>
                 </div>
               )}
               {values.payment === "creditCard" && (
                 <div className="form__payment-creditCard">
                   <div className="form__input">
                     <label htmlFor="paymentNumber">e-Money Number</label>
-                    <Field type="text" name="paymentNumber" placeholder="238521993" />
+                    <Field
+                      type="text"
+                      name="paymentNumber"
+                      placeholder="238521993"
+                    />
                   </div>
                   <div className="form__input">
                     <label htmlFor="paymentPin">e-Money PIN</label>
