@@ -6,8 +6,7 @@ import { useCounter } from "../../hooks/useCounter";
 import { Link } from "react-router-dom";
 import { ListProductsCart } from "../TextElements/ListProductsCart";
 import { TotalCartInfo } from "../TextElements/TotalCartInfo";
-import carrito from "../../assets/shared/desktop/icon-cart-black.svg"
-
+import carrito from "../../../public/images/shared/desktop/icon-cart-black.svg";
 
 export const CartIcon = (props) => {
   //3: Consumiendo el contexto de CartContext
@@ -31,10 +30,7 @@ export const CartIcon = (props) => {
         <>
           <h3 className="cart-empty">Your cart is empty</h3>
           <div className="cart-image">
-            <img
-              src={carrito}
-              alt="cartEmpty"
-            />
+            <img src={carrito} alt="cartEmpty" />
           </div>
         </>
       ) : (
