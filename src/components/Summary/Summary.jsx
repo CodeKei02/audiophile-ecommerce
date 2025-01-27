@@ -3,6 +3,7 @@ import { CartContext } from "../../context/CartContext";
 import { ListProductsCart } from "../TextElements/ListProductsCart";
 import { TotalCartInfo } from "../TextElements/TotalCartInfo";
 import "../../css/components/list_products_cart.css"
+
 export const Summary = (props) => {
   const {handleShowModal} = props;
   const { cart } = useContext(CartContext);
@@ -42,7 +43,7 @@ export const Summary = (props) => {
             <h3 className="subtitle">grand total</h3>
             <p className="cart-product-price">$ {grandTotal}</p>
         </div>
-        <button className="button-continue text-uppercase" onClick={handleShowModal}>continue & pay</button>
+        <button type="submit" className="button-continue text-uppercase" onClick={handleShowModal} >continue & pay</button>
       </div>
     </div>
   );

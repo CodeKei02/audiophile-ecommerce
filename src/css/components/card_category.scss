@@ -1,11 +1,15 @@
 @import '../variables';
 
+#root{
+    background-color: rgba($clr-gray, 0.1);
+}
+
 .btn{
     @include btn-see-product($clr-white, $clr-orange, transparent);
 }
 
 .category-banner{
-    padding-top: 2rem;
+    padding-top: 5rem;
     padding-bottom: 2rem;
     font-size: 1.75rem;
     line-height: 1.33;
@@ -20,6 +24,7 @@
 .productCard__container{
     margin-top: 5rem;
     margin-bottom: 2rem;
+    padding-top: 1rem;
 
     .productCard{
         min-height: 45.25rem;
@@ -95,7 +100,7 @@
         font-size: 2.5rem;
         letter-spacing: 0.0894rem;
         padding-top: 6.5625rem;
-        padding-bottom: 6.0625rem;
+        padding-bottom: 3rem;
     }
 
     .productCard__container .productCard{
@@ -126,6 +131,10 @@
 }
 
 @media screen and (min-width: 1023px) {
+    .category-banner{
+        padding-bottom: 2rem;
+    }
+
     .productCard__container {
         text-align: left;
         margin-bottom: 12rem;

@@ -1,7 +1,9 @@
 import "../../css/components/form.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import imageCashOnDelivery from "../../../public/images/checkout/icon-cash-on-delivery.svg";
-export const CheckoutForm = () => {
+export const CheckoutForm = (props) => {
+  
+
   return (
     <>
       <Formik
