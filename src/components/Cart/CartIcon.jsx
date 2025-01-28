@@ -12,11 +12,14 @@ export const CartIcon = (props) => {
   //3: Consumiendo el contexto de CartContext
   const { cart, dispatch } = useContext(CartContext);
   const { increaseItem, decreaseItem } = useCounter();
-  const { display } = props;
+  const { display, ref } = props;
+
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
+
+  
 
   const removeItems = () => {
     dispatch({

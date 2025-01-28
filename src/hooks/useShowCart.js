@@ -9,6 +9,7 @@ export const useShowCart = (initialValue) => {
 
   return {
     showCart,
+    setShowCart,
     handleShowCart,
   };
 };

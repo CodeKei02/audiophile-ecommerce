@@ -1,13 +1,35 @@
 import { NavLink } from "react-router-dom";
 import { CartIcon, useShowCart, Overlay, CartContext } from "../../index";
 import "../../css/components/navbar.css";
-import { useContext } from "react";
-import buttonCartImage from "../../../public/images/shared/desktop/icon-cart.svg"
-import logo from "../../../public/images/shared/desktop/logo.svg"
+import { useContext, useRef, useEffect } from "react";
+import buttonCartImage from "../../../public/images/shared/desktop/icon-cart.svg";
+import logo from "../../../public/images/shared/desktop/logo.svg";
 
 export const Navigation = () => {
   const { showCart, handleShowCart } = useShowCart(false);
   const { cart } = useContext(CartContext);
+  const cartRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (cartRef.current && !cartRef.current.contains(e.target)) {
+        handleShowCart(false);
+      }
+    };
+
+    if (showCart) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+    
+  }, [showCart, handleShowCart]);
+
+  const toggleCart = () => {
+    handleShowCart(!showCart);
+  }
 
   return (
     <nav className={`navbar navbar-expand-lg fixed-top `}>
@@ -24,10 +46,7 @@ export const Navigation = () => {
           </button>
 
           <a className="navbar-brand" href="#">
-            <img
-              src={logo}
-              className="nav-logo"
-            ></img>
+            <img src={logo} className="nav-logo"></img>
           </a>
         </div>
 
@@ -121,11 +140,8 @@ export const Navigation = () => {
           </div>
         </div>
         <div className="navbar_container-cart">
-          <button onClick={handleShowCart} className="navbar_btn-cart">
-            <img
-              src={buttonCartImage}
-              alt="cartIcon"
-            />
+          <button onClick={toggleCart} className="navbar_btn-cart">
+            <img src={buttonCartImage} alt="cartIcon" />
           </button>
           <div
             className={`navbar_items-cart ${
@@ -136,7 +152,9 @@ export const Navigation = () => {
           </div>
         </div>
       </div>
-      <CartIcon display={showCart ? "" : "d-none"} />
+      <div ref={cartRef}>
+        <CartIcon display={showCart ? "" : "d-none"} />
+      </div>
       <Overlay display={showCart ? "overlay-active" : ""} />
     </nav>
   );
