@@ -18,6 +18,7 @@ export const ProductDetailPage = () => {
   const [product, setProduct] = useState({});
   const [count, setCount] = useState(1);
   const { dispatch } = useContext(CartContext);
+  const [detailPage, setDetailPage] = useState(false);
 
   const addToProduct = () => {
     dispatch({
@@ -37,30 +38,37 @@ export const ProductDetailPage = () => {
   
   useEffect(() => {
     const currentName = category.find(
-      (product) => product.name.split(" ").join("-") === productName
+      (product) => product.shortName.split(" ").join("-").toLowerCase() === productName.toLowerCase()
     );
-
     setProduct(currentName);
+
   }, [category, productName]);
 
-
+  useEffect(() => {
+    if (productName) {
+      setDetailPage(true);
+    } else {
+      setDetailPage(false);
+    }
+  }, [productName]);
   return (
     <div className="page-container">
-      <div className="productCard__container">
+      <div className={detailPage ? "productCard__container productCard__container--detail" : "productCard__container"}>
         <ProductCard
           quantity={count}
           increment={increaseItem}
           decrement={decreaseItem}
           product={product}
           onProductAdd={addToProduct}
-          detailPage={true}
+          detailPage={detailPage}
         />
-      </div>
-      <Paragraph paragraph={product.features} />
-      <Accesories product={product} />
-      <ProductGallery product={product} />
-      <SuggestedProducts />
-      <Categories />
+      </div> 
+  
+      {/* <Paragraph paragraph={product.features} /> */}
+      {/* <Accesories product={product} /> */}
+      {/* <ProductGallery product={product} /> */}
+      {/* <SuggestedProducts />
+      <Categories /> */}
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../../css/components/suggested_product.css";
+import "../../css/components/suggest_product.css";
 import suggestedImage1 from "../../../public/images/shared/desktop/image-xx99-mark-one-headphones.jpg"
 import suggestedImage2 from "../../../public/images/shared/desktop/image-xx99-mark-two-headphones.jpg"
 import suggestedImage3 from "../../../public/images/shared/desktop/image-xx59-headphones.jpg"

@@ -13,7 +13,7 @@ export const CategoryPage = () => {
                 {category.map((product) => 
                 <ProductCard 
                     key={product.id}
-                    linkTo={`/${params.category}/${product.name.split(` `).join(`-`)}`}
+                    linkTo={`/${params.category}/${product.shortName.split(` `).join(`-`)}`}
                     product={product}
                 />
                 )}

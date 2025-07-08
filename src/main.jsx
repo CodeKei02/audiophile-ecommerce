@@ -5,9 +5,10 @@ import { App } from "./App";
 
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
     <StrictMode>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </StrictMode>
-  </BrowserRouter>
+  
 );

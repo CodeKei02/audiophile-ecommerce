@@ -14,6 +14,12 @@ $clr-linear-gradient: rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5);
 /*FONT*/
 $font-family: "Manrope", sans-serif;
 
+html, body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
 *{
     font-family: $font-family;
 }

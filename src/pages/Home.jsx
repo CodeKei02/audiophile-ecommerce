@@ -1,16 +1,21 @@
 import {
   Header,
-  Categories,
   FeaturedProducts
 } from "../index";
+import { CategoriesHome } from "../components/home/CategoriesHome";
+import { BestSellingProducts } from "../components/home/BestSellingProducts";
+import { Services } from "../components/home/Services";
+
+
 export const Home = () => {
+  
+
   return (
     <>
       <Header />
-      <div className="page-container">
-        <Categories />
-        <FeaturedProducts />
-      </div>
+      <CategoriesHome />
+      <BestSellingProducts />
+      <Services />
     </>
   );
 };

@@ -15,39 +15,37 @@ export const ProductCard = (props) => {
     increment,
     decrement
   } = props;
-
-  
    return (
-    <div className="productCard">
+    <div className={`productCard ${detailPage ? "productCard--detail" : ""}`}>
       <div className="productCard__image-frame">
         <img
-          className="productCard__image desktop-image"
+          className="productCard__image "
           src={product.image?.product}
-          alt={`${product.name} ${product.category}`}
-        />
-
-        <img
-          className="productCard__image tablet-image "
-          src={product.image?.productTablet}
-          alt={`${product.name} ${product.category}`}
-        />
-
-        <img
-          className="productCard__image mobile-image "
-          src={product.image?.productMobile}
           alt={`${product.name} ${product.category}`}
         />
       </div>
 
       <div className="productCard__content">
-        <Overline/>
         <ProductHeadline
           name={product.name}
           category={product.category}
+          // rating={product.rating.toFixed(1)}
+          color={product.color}
         />
-        <p>{product.description}</p>
-        {detailPage && (
-          <p className="productCard__price">{`$ ${product.price}`}</p>
+
+        <p className="productCard__price">{`$${product.price}`} USD</p>
+        {product.colors && (
+          <div className="productCard__colors">
+            {product.colors.map((color, index) => (   
+                <Button
+                  key={index}
+                  className="productCard__color"
+                  style={{ backgroundColor: color }}
+                  value={color}
+                  
+                ></Button>
+            ))}
+          </div>
         )}
         <div className="buttons">
           {detailPage && (
@@ -60,10 +58,16 @@ export const ProductCard = (props) => {
           <Button
             onClick={() => onProductAdd(product)}
             linkTo={linkTo}
+            className="productCard__button"
           >
             {detailPage ? "Add to cart" : "See Product"}
           </Button>
         </div>
+        {detailPage && (
+          <>
+            <p className="productCard__description">{product.description}</p>
+          </>
+        )}
       </div>
     </div>
   );

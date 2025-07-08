@@ -1,10 +1,19 @@
 export const ProductHeadline = (props) => {
-  const { name, category } = props;
+  const { name, category, rating, color } = props;
 
   return (
-    <h2 className="productCard__headline">
-      {name} <br />
-      {category}
-    </h2>
+      <div className="productCard__headline-container">
+        <div className="productCard__headline">
+          <strong>
+            {name} <br/>{category}
+          </strong>
+          
+          <span className="productCard__color"> - {color} </span>
+        </div>
+        <span className="productCard__rating">{rating && (<span>{rating}⭐</span>)}</span>
+      </div>
+      
+
+    
   );
 };
