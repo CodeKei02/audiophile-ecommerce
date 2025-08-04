@@ -1,6 +1,6 @@
 import { Button, QuantityButton, ProductHeadline, Overlay } from "../../index";
 import "../../css/components/card_category.css";
-import { HoverImages } from "../Images/hoverImages";
+import { HoverImages } from "../Images/HoverImages";
 import { ZoomButton } from "../Button/ZoomButton";
 import { useState } from "react";
 import { ModalImage } from "../Modals/Modal-image";
