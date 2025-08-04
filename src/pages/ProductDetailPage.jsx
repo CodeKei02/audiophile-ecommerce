@@ -28,7 +28,7 @@ export const ProductDetailPage = () => {
   const increaseItem = () => setCount((count) => count + 1);
   const decreaseItem = () => setCount((count) => (count > 1 ? count - 1 : 1));
   const categoryImages = {
-    headphones: "../../public/images/headphones/white/image-gallery-3.jpg",
+    headphones: "/images/headphones/white/image-gallery-3.jpg",
     speakers:
       "../../public/images/speakers/product-zx7-speaker/image-gallery-3.jpg",
     earphones:
