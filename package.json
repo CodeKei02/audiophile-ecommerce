@@ -6,23 +6,20 @@
   "type": "module",
   "scripts": {
     "dev": "yarn vite",
-    "sass-dev": "sass --update --style=expanded src/css",
-    "build": "yarn sass-dev && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@react-three/drei": "^10.3.0",
     "formik": "^2.4.6",
     "gh-pages": "^6.3.0",
     "motion": "12.16.0",
+    "rc-slider": "^11.1.8",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "6.0.2",
-    "react-three-fiber": "^6.0.13",
-    "sass": "^1.83.4",
     "swiper": "^11.2.8"
   },
   "devDependencies": {

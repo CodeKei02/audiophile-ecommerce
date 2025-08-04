@@ -1,0 +1,70 @@
+.navbar {
+  background-color: #101010;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: fixed;
+}
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar .navbar_container-cart {
+  position: relative;
+  z-index: 100;
+}
+.navbar .navbar_container-cart .navbar_btn-cart {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background-color: transparent;
+}
+.navbar .navbar_container-cart .navbar_items-cart {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  background-color: #D87D4A;
+  color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 0;
+}
+.navbar .nav-logo {
+  width: 143px;
+  height: 25px;
+}
+.navbar .offcanvas-end {
+  width: 300px;
+}
+.navbar .navbar-nav {
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+.navbar .navbar-nav .nav-link {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.813rem;
+  font-weight: 700;
+}
+.navbar .navbar-nav .active {
+  color: #D87D4A !important;
+}
+
+@media screen and (min-width: 1023px) {
+  .navbar > .container-fluid {
+    width: 77vw;
+    max-width: 69.375rem;
+  }
+  .navbar > .container-fluid .navbar-collapse {
+    flex-grow: 0;
+  }
+  .navbar > .container-fluid .navbar-collapse .nav-link {
+    color: #FFFFFF;
+  }
+  .navbar > .container-fluid .navbar-collapse .nav-link:hover {
+    color: #D87D4A;
+    background-color: #101010;
+  }
+}/*# sourceMappingURL=navbar.css.map */

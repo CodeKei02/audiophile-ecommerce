@@ -1,0 +1,27 @@
+.productCategory-filter {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.range-slider {
+  width: 50%;
+}
+
+.range-slider .rc-slider-rail {
+  background-color: #6d6d6d;
+}
+
+.rc-slider-track {
+  background-color: #000 !important;
+}
+
+.range-slider .rc-slider-handle {
+  border: 2px solid #000;
+}
+
+@media (min-width: 1024px) {
+  .productCategory-filter {
+    margin-top: 3rem !important;
+  }
+}

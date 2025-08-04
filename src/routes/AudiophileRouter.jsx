@@ -4,30 +4,29 @@ import {
   CategoryPage,
   ProductDetailPage,
   Navigation,
-  Promotion,
   Footer,
-  ScrollToTop,
   CartProvider,
-  CheckoutPage
+  CheckoutPage,
 } from "../index";
+import { PageLoader } from "../components/PageLoader/PageLoader";
 
 export const AudiophileRouter = () => {
   return (
     <CartProvider>
-      <ScrollToTop />
       <Navigation />
-      <Routes>
-        <Route path="home" element={<Home />}></Route>
-        <Route path="/:category" element={<CategoryPage />} />
-        <Route
-          path="/:category/:product"
-          element={<ProductDetailPage />}
-        ></Route>
-        <Route path="/*" element={<Navigate to="home" />} />
-        <Route path="/checkout" element={<CheckoutPage />} />
-      </Routes>
-      <Footer />
+      <PageLoader>
+        <Routes>
+          <Route path="home" element={<Home />}></Route>
+          <Route path="/:category" element={<CategoryPage />} />
+          <Route
+            path="/:category/:product"
+            element={<ProductDetailPage />}
+          ></Route>
+          <Route path="/*" element={<Navigate to="home" />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+        </Routes>
+        <Footer />
+      </PageLoader>
     </CartProvider>
-
   );
 };

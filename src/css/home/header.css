@@ -1,0 +1,145 @@
+.header {
+  height: 42rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0)),
+    url("../../../public/images/home/mobile/image-header.jpg") top/cover;
+  background-repeat: no-repeat;
+  background-color: #4c4c4c;
+  color: #ffffff;
+  background-size: 100% 100%;
+  margin-top: -6rem;
+  opacity: 0;
+  animation: fadeInHeader 1.5s ease-in-out forwards;
+}
+.header .header-content {
+  position: absolute;
+  top: 12.5rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 17.27rem;
+  text-align: center;
+}
+.header .header-content .header-subtitle {
+  font-size: var(--ft-overline);
+  font-weight: 400;
+  color: #f1f1f1;
+  line-height: 1.1875rem;
+  letter-spacing: 0.625rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  opacity: 0.5;
+}
+.header .header-content .header-title {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.625rem;
+  letter-spacing: 1.29px;
+  margin-bottom: 1.5rem;
+}
+.header .header-content .header-paragraph {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.5625rem;
+  opacity: 0.75;
+  margin-bottom: 2.1875rem;
+}
+.header .header-content .header-btn-headphones {
+  width: 160px;
+  height: 48px;
+  color: #ffffff;
+  background-color: #d87d4a;
+  border: 1px solid none;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  animation: zoomBtn 2.5s ease-in-out infinite;
+}
+.header .header-content .header-btn-headphones:hover {
+  background-color: #fbaf85;
+}
+
+@keyframes fadeInHeader {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes zoomBtn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media screen and (min-width: 450px) {
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../public/images/home/tablet/image-header.jpg") center
+        top/cover;
+    background-repeat: no-repeat;
+    margin-top: -4rem;
+  }
+}
+@media screen and (min-width: 640px) {
+  .header {
+    background-size: 100% 100%;
+  }
+  .header .header-content {
+    width: 24.75rem;
+    top: 13rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    height: 45.56rem;
+  }
+  .header .header-content {
+    width: 24.75rem;
+    top: 16rem;
+  }
+}
+@media (min-width: 1023px) {
+  .header {
+    height: 50rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../public/images/home/desktop/image-hero.jpg");
+    background-color: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header .header-content {
+    top: 13rem;
+    left: auto;
+    right: auto;
+    text-align: left;
+  }
+  .header .header-content .header-subtitle {
+    letter-spacing: 0.625rem;
+    margin-bottom: 1rem;
+  }
+  .header .header-content .header-title {
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    letter-spacing: 1.29px;
+    line-height: 2.625rem;
+  }
+  .header .header-content .header-paragraph {
+    width: 20.8125rem;
+    margin-inline: 0;
+  }
+  .header .header-content .header-btn-headphones {
+    margin: 0;
+  }
+} /*# sourceMappingURL=header.css.map */

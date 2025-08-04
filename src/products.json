@@ -1,66 +1,44 @@
 {
   "headphones": [
     {
-      "id": 2,
-      "name": "xx99 mark ii",
-      "shortName": "xx99 mk ii",
-      "color": "black",
-      "rating": 5,
-      "category": "headphones",
-      "price_id": "price_1JzRN1GQ9nm0CiBqTwJQzhFd",
-      "price": 50,
-      "image": {
-        "product": "/images/headphones/black/headphones-black-1.png",
-        "cart": "/images/cart/image-xx99-mark-two-headphones.jpg"
-      },
-      "description": "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound."
-    },
-    {
-      "id": 4,
+      "id": 1,
       "name": "power wireless",
       "color": "green",
-      "colors": [
-        "pink",
-        "white"
-      ],
-      "rating": 4.5,
+      "colors": ["pink", "white"],
+      "rating": 5,
       "shortName": "power wireless green",
       "category": "headphones",
       "price_id": "price_1JzROmGQ9nm0CiBq2X5Y6Z7H",
-      "price": 50,
+      "price": 45,
       "image": {
         "product": "/images/headphones/green/headphones-green-1.png",
-        "cart": "/images/headphones/green/headphones-green-1.png"
+        "cart": "/images/headphones/green/headphones-green-1.png",
+        "gallery_image1": "/images/headphones/green/headphones-green-2.png"
       },
       "description": "Experience the freedom of wireless audio with the Power Wireless Headphones. Designed for comfort and convenience, these headphones deliver high-quality sound without the hassle of tangled wires."
     },
     {
-      "id": 5,
-      "name": "Power Wireless",
+      "id": 2,
+      "name": "power wireless",
       "color": "pink",
-      "colors": [
-        "white",
-        "green"
-      ],
+      "colors": ["white", "green"],
       "rating": 4.5,
       "shortName": "power wireless pink",
       "category": "headphones",
       "price_id": "price_1JzROmGQ9nm0CiBq2X5Y6Z7H",
-      "price": 50,
+      "price": 45,
       "image": {
         "product": "/images/headphones/pink/headphones-pink-1.png",
-        "cart": "/images/headphones/pink/headphones-pink-1.png"
+        "cart": "/images/headphones/pink/headphones-pink-1.png",
+        "gallery_image1": "/images/headphones/pink/headphones-pink-2.png"
       },
       "description": "Experience the freedom of wireless audio with the Power Wireless Headphones. Designed for comfort and convenience, these headphones deliver high-quality sound without the hassle of tangled wires."
     },
     {
-      "id": 6,
+      "id": 3,
       "name": "Power Wireless",
       "color": "white",
-      "colors": [
-        "pink",
-        "green"
-      ],
+      "colors": ["pink", "green"],
       "rating": 5,
       "shortName": "power wireless white",
       "category": "headphones",
@@ -68,11 +46,30 @@
       "price": 50,
       "image": {
         "product": "/images/headphones/white/headphones-white-1.png",
-        "cart": "/images/headphones/white/headphones-white-1.png"
+        "cart": "/images/headphones/white/headphones-white-1.png",
+        "gallery_image1": "/images/headphones/white/headphones-white-2.png"
       },
       "description": "Experience the freedom of wireless audio with the Power Wireless Headphones. Designed for comfort and convenience, these headphones deliver high-quality sound without the hassle of tangled wires."
-    },{
-      "id": 7,
+    },
+    {
+      "id": 4,
+      "name": "xx99 mark ii",
+      "shortName": "xx99 mk ii",
+      "color": "black",
+      "rating": 4,
+      "category": "headphones",
+      "price_id": "price_1JzRN1GQ9nm0CiBqTwJQzhFd",
+      "price": 40,
+      "image": {
+        "product": "/images/headphones/black/headphones-black-1.png",
+        "cart": "/images/headphones/black/headphones-black-1.png",
+        "gallery_image1": "/images/headphones/black/image-product.jpg"
+      },
+      "description": "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound."
+    },
+
+    {
+      "id": 5,
       "name": "Power Kids",
       "color": "Blue",
       "rating": 4,
@@ -81,12 +78,14 @@
       "price_id": "price_1JzROmGQ9nm0Ci",
       "price": 20,
       "image": {
-        "product": "/images/headphones/kids/headphones-blue-kids-1.jpg",
-        "cart": "/images/headphones/kids/headphones-blue-kids-1.jpg"
+        "product": "/images/headphones/kids/boy/headphones-blue-kids-1.jpg",
+        "cart": "/images/headphones/kids/boy/headphones-blue-kids-1.jpg",
+        "gallery_image1": "/images/headphones/kids/boy/gallery-image-1.png"
       },
       "description": "Experience the freedom of wireless audio with the Power Wireless Headphones. Designed for comfort and convenience, these headphones deliver high-quality sound without the hassle of tangled wires."
-    },{
-      "id": 8,
+    },
+    {
+      "id": 6,
       "name": "Power Kids",
       "color": "Pink",
       "rating": 4,
@@ -95,8 +94,25 @@
       "price_id": "price_1JzROmGQ9nm0Ci",
       "price": 18,
       "image": {
-        "product": "/images/headphones/kids/headphones-pink-kids.jpg",
-        "cart": "/images/headphones/kids/headphones-pink-kids.jpg"
+        "product": "/images/headphones/kids/girl/headphones-pink-kids.jpg",
+        "cart": "/images/headphones/kids/girl/headphones-pink-kids.jpg",
+        "gallery_image1": "/images/headphones/kids/girl/gallery-image-1.png"
+      },
+      "description": "Experience the freedom of wireless audio with the Power Wireless Headphones. Designed for comfort and convenience, these headphones deliver high-quality sound without the hassle of tangled wires."
+    },
+    {
+      "id": 0,
+      "name": "xx99 mark i",
+      "color": "black",
+      "rating": 4,
+      "shortName": "xx99 mk i",
+      "category": "headphones",
+      "price_id": "price_1JzROmGQ9nm0CiBq2X5Y6Z7H",
+      "price": 70,
+      "image": {
+        "product": "/images/headphones/product-xx99-mark-one-headphones/image-category-page-preview.jpg",
+        "cart": "/images/headphones/product-xx99-mark-one-headphones/image-product.jpg",
+        "gallery_image1": "/images/headphones/product-xx99-mark-one-headphones/image-2.png"
       },
       "description": "Experience the freedom of wireless audio with the Power Wireless Headphones. Designed for comfort and convenience, these headphones deliver high-quality sound without the hassle of tangled wires."
     }
@@ -107,17 +123,15 @@
       "id": 7,
       "name": "yx1 wireless",
       "color": "black",
-      "rating": 4.5,
+      "rating": 4,
       "shortName": "yx1",
       "category": "earphones",
       "price_id": "price_1JzRR9GQ9nm0CiBqTMl26eEE",
       "price": 59,
       "image": {
-       
-        "product": "/images/product-yx1-earphones/desktop/image-product.jpg",
-        
-        "cart": "/images/cart/image-yx1-earphones.jpg"
-       
+        "product": "/images/earphones/product-yx1-earphones/image-category-page-preview.jpg",
+        "cart": "/images/earphones/product-yx1-earphones/image-product.jpg",
+        "gallery_image1": "/images/earphones/product-yx1-earphones/image-gallery-1.jpg"
       },
       "description": "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature."
     },
@@ -127,16 +141,14 @@
       "shortName": "power wireless white",
       "category": "earphones",
       "price_id": "price_1JzROmGQ9nm0CiBq2X5Y6Z7H",
-      "rating": 5,
+      "rating": 4.5,
       "color": "white",
-      "colors": [
-        "blue",
-        "black"
-      ],
-      "price": 25,
-      "image":{
+      "colors": ["blue", "black"],
+      "price": 35,
+      "image": {
         "product": "/images/earphones/earphones-white/earphones-white-closed.png",
-        "cart": "/images/earphones/earphones-white/earphones-white-closed.png"
+        "cart": "/images/earphones/earphones-white/earphones-white-closed.png",
+        "gallery_image1": "/images/earphones/earphones-white/earphones-white-open.png"
       },
       "description": "Experience the freedom of wireless audio with the Power Wireless Earphones. Designed for comfort and convenience, these earphones deliver high-quality sound without the hassle of tangled wires."
     },
@@ -146,16 +158,14 @@
       "shortName": "power wireless blue",
       "category": "earphones",
       "price_id": "price_1JzROmGQ9nm0CiBq2X5Y6Z7H",
-      "rating": 4.5,
+      "rating": 5,
       "color": "blue",
-      "colors": [
-        "black",
-        "white"
-      ],
-      "price": 25,
-      "image":{
+      "colors": ["black", "white"],
+      "price": 30,
+      "image": {
         "product": "/images/earphones/earphones-blue/earphones-blue-close.png",
-        "cart": "/images/earphones/earphones-blue/earphones-blue-close.png"
+        "cart": "/images/earphones/earphones-blue/earphones-blue-close.png",
+        "gallery_image1": "/images/earphones/earphones-blue/earphones-blue-open.png"
       },
       "description": "Experience the freedom of wireless audio with the Power Wireless Earphones. Designed for comfort and convenience, these earphones deliver high-quality sound without the hassle of tangled wires."
     },
@@ -166,15 +176,13 @@
       "category": "earphones",
       "rating": 5,
       "color": "black",
-      "colors": [
-        "blue",
-        "white"
-      ],
+      "colors": ["blue", "white"],
       "price_id": "price_1JzROmGQ9nm0CiBq2X5Y6Z7H",
-      "price": 25,
-      "image":{
+      "price": 40,
+      "image": {
         "product": "/images/earphones/earphones-black/earphones-black-close.png",
-        "cart": "/images/earphones/earphones-black/earphones-black-close.png"
+        "cart": "/images/earphones/earphones-black/earphones-black-close.png",
+        "gallery_image1": "/images/earphones/earphones-black/earphones-black-open.png"
       },
       "description": "Experience the freedom of wireless audio with the Power Wireless Earphones. Designed for comfort and convenience, these earphones deliver high-quality sound without the hassle of tangled wires."
     }
@@ -182,20 +190,69 @@
 
   "speakers": [
     {
+      "id": 13,
+      "name": "Power Wireless",
+      "shortName": "power wireless blue",
+      "category": "speakers",
+      "price_id": "price_1JzROmGQ9nm0CiBq2X5Y6Z7H",
+      "price": 55,
+      "rating": 5,
+      "color": "blue",
+      "colors": ["red", "black"],
+      "image": {
+        "product": "/images/speakers/blue/speakers-blue.png",
+        "cart": "/images/speakers/blue/speakers-blue.png",
+        "gallery_image1": "/images/speakers/blue/speakers-blue-2.png"
+      },
+      "description": "Experience the freedom of wireless audio with the Power Wireless Speaker. Designed for comfort and convenience, this speaker delivers high-quality sound without the hassle of tangled wires."
+    },
+    {
+      "id": 14,
+      "name": "Power Wireless",
+      "shortName": "power wireless red",
+      "category": "speakers",
+      "price_id": "price_1JzROmGQ9nm0CiBq2X5Y6Z7H",
+      "price": 50,
+      "rating": 4.5,
+      "color": "red",
+      "colors": ["blue", "black"],
+      "image": {
+        "product": "/images/speakers/red/speakers-red-1.png",
+        "cart": "/images/speakers/red/speakers-red-1.png",
+        "gallery_image1": "/images/speakers/red/speakers-red-2.png"
+      },
+      "description": "Experience the freedom of wireless audio with the Power Wireless Speaker. Designed for comfort and convenience, this speaker delivers high-quality sound without the hassle of tangled wires."
+    },
+    {
+      "id": 15,
+      "name": "Power Wireless",
+      "shortName": "power wireless black",
+      "category": "speakers",
+      "price_id": "price_1JzROmGQ9nm0CiBq2X5Y6Z7H",
+      "price": 70,
+      "rating": 5,
+      "color": "black",
+      "colors": ["blue", "red"],
+      "image": {
+        "product": "/images/speakers/black/speakers-black-1.png",
+        "cart": "/images/speakers/black/speakers-black-1.png",
+        "gallery_image1": "/images/speakers/black/speakers-black-2.png"
+      },
+      "description": "Experience the freedom of wireless audio with the Power Wireless Speaker. Designed for comfort and convenience, this speaker delivers high-quality sound without the hassle of tangled wires."
+    },
+    {
       "id": 11,
       "name": "zx9",
       "shortName": "zx9",
-      "category": "speaker",
+      "category": "speakers",
       "price_id": "price_1JzRP8GQ9nm0CiBqOEHkUuvW",
-      "price": 45,
+      "price": 89,
       "color": "black",
       "rating": 4.5,
       "image": {
-        
-        "product": "/images/product-zx9-speaker/desktop/image-product.jpg",
-        
-        "cart": "/images/cart/image-zx9-speaker.jpg"
-        
+        "product": "/images/speakers/product-zx9-speaker/image-product.jpg",
+        "cart": "/images/speakers/product-zx9-speaker/image-zx9-speaker.jpg",
+        "gallery_image1": "/images/speakers/product-zx9-speaker/image-gallery-3.jpg"
       },
       "description": "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups."
     },
@@ -204,77 +261,16 @@
       "id": 12,
       "name": "zx7",
       "shortName": "zx7",
-      "category": "speaker",
+      "category": "speakers",
       "price_id": "price_1JzRPdGQ9nm0CiBq2Rm60YIp",
-      "price": 35,
+      "price": 100,
       "rating": 4.5,
       "image": {
-       
-        "product": "/images/product-zx7-speaker/desktop/image-product.jpg",
-       
-        "cart": "/images/cart/image-zx7-speaker.jpg"
-        
+        "product": "/images/speakers/product-zx7-speaker/image-product.jpg",
+        "cart": "/images/speakers/product-zx7-speaker/image-product.jpg",
+        "gallery_image1": "/images/speakers/product-zx7-speaker/image-gallery-3.jpg"
       },
       "description": "Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use."
-
-      
-    },
-    {
-      "id": 13,
-      "name": "Power Wireless",
-      "shortName": "power wireless blue",
-      "category": "Speakers",
-      "price_id": "price_1JzROmGQ9nm0CiBq2X5Y6Z7H",
-      "price": 25,
-      "rating": 4.5,
-      "color": "blue",
-      "colors": [
-        "red",
-        "black"
-      ],
-      "image":{
-        "product": "/images/speakers/blue/speakers-blue.png",
-        "cart": "/images/speakers/blue/speakers-blue.png"
-      },
-      "description": "Experience the freedom of wireless audio with the Power Wireless Speaker. Designed for comfort and convenience, this speaker delivers high-quality sound without the hassle of tangled wires."
-    },
-    {
-      "id": 14,
-      "name": "Power Wireless",
-      "shortName": "power wireless red",
-      "category": "Speakers",
-      "price_id": "price_1JzROmGQ9nm0CiBq2X5Y6Z7H",
-      "price": 25,
-      "rating": 4.5,
-      "color": "red",
-      "colors": [
-        "blue",
-        "black"
-      ],
-      "image":{
-        "product": "/images/speakers/red/speakers-red-1.png",
-        "cart": "/images/speakers/red/speakers-red-1.png"
-      },
-      "description": "Experience the freedom of wireless audio with the Power Wireless Speaker. Designed for comfort and convenience, this speaker delivers high-quality sound without the hassle of tangled wires."
-    },
-    {
-      "id": 15,
-      "name": "Power Wireless",
-      "shortName": "power wireless black",
-      "category": "Speakers",
-      "price_id": "price_1JzROmGQ9nm0CiBq2X5Y6Z7H",
-      "price": 25,
-      "rating": 5,
-      "color": "black",
-      "colors": [
-        "blue",
-        "red"
-      ],
-      "image":{
-        "product": "/images/speakers/black/speakers-black-1.png",
-        "cart": "/images/speakers/black/speakers-black-1.png"
-      },
-      "description": "Experience the freedom of wireless audio with the Power Wireless Speaker. Designed for comfort and convenience, this speaker delivers high-quality sound without the hassle of tangled wires."
     }
   ]
 }

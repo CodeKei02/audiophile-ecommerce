@@ -1,0 +1,86 @@
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/scrollbar";
+@import "../variables.css";
+
+.bestSelling-title {
+  font-size: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.bestSelling-container {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 1rem 0;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.bestSelling-container::-webkit-scrollbar {
+  display: none;
+}
+
+.bestSelling-container .bestSelling-swiper {
+  overflow-x: hidden;
+  margin-top: 25px;
+  padding: 0 2rem;
+}
+
+.bestSelling-container .bestSelling-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5625rem;
+  max-height: 500px;
+  box-sizing: border-box;
+}
+
+.bestSelling-container .bestSelling-card img {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.bestSelling-container .bestSelling-name,
+.bestSelling-text {
+  margin: 0;
+}
+
+.bestSelling-container .bestSelling-content .btn {
+  width: 100%;
+}
+
+.bestSelling-container .bestSelling-content .btn:hover {
+  background-color: #d87d4a;
+  color: white;
+  opacity: 0.8;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: black;
+  height: 10px;
+  width: 10px;
+  margin-right: 6px;
+  opacity: 0.5;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(255, 162, 0);
+  opacity: 1;
+}
+
+@media (max-width: 470px) {
+  .bestSelling-container .bestSelling-card {
+    width: 100% !important;
+    max-width: 300px;
+  }
+}

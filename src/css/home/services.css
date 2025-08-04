@@ -1,0 +1,26 @@
+.services-container {
+  text-align: center;
+}
+.services-container .services-content .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.services-container .services-content .service h3 {
+  font-weight: 700;
+}
+.services-container .services-content .service p {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+@media (min-width: 786px) {
+  .services-container .services-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .services-container .services-content .service {
+    width: 300px;
+  }
+}

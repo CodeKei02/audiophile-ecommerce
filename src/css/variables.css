@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900");
+/*COLORS*/
+/*FONT*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "TikTok Sans", sans-serif;
+}
+
+.page-container {
+  width: 88vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1023px) {
+  .page-container {
+    width: 77vw;
+    max-width: 69.375rem;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,106 @@
+.cart-container {
+  min-width: 370px;
+  max-width: 450px;
+  max-height: 488px;
+  margin: 0 1rem;
+  padding: 2rem;
+  position: absolute;
+  top: 130px;
+  z-index: 100;
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  animation: 0.3s ease-in-out 0s 1 normal forwards running show;
+}
+.cart-container .cart-empty {
+  font-size: 1.2rem;
+  text-align: center;
+  opacity: 50%;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.cart-container .cart-image {
+  width: 6rem;
+  height: 5rem;
+  margin: 0 auto;
+}
+.cart-container .cart-image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+.cart-container .cart-header {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-container .cart-header h3,
+.cart-container .cart-header small {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  gap: 0.25rem;
+}
+.cart-container .cart-header .cart-remove {
+  background: transparent;
+  border: 0;
+  color: #4c4c4c;
+  padding: 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+.cart-container .cart-header .cart-remove:hover {
+  color: #d87d4a;
+}
+.cart-container .cart-product {
+  margin-top: 1rem;
+  list-style-type: none;
+  padding: 0;
+}
+.cart-container .cart-product .cart-item {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cart-container .cart-product .buttons {
+  justify-content: flex-end;
+}
+.cart-container .button-checkout {
+  width: 160px;
+  height: 48px;
+  color: #ffffff;
+  background-color: #d87d4a;
+  border: 1px solid transparent;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.cart-container .button-checkout:hover {
+  opacity: 50%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out opacity;
+}
+
+@keyframes show {
+  0% {
+    translate: 0px -10%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    translate: 0px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .cart-container {
+    right: 130px;
+  }
+}

@@ -1,0 +1,30 @@
+.cart-total-info {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-total-info .subtitle {
+  text-transform: uppercase;
+  font-size: 15px;
+  opacity: 50%;
+}
+.cart-total-info p {
+  font-weight: 700;
+}
+
+.button-continue {
+  width: 160px;
+  height: 48px;
+  color: #FFFFFF;
+  background-color: #D87D4A;
+  border: 1px solid transparent;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
