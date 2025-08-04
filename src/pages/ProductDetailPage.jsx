@@ -29,10 +29,8 @@ export const ProductDetailPage = () => {
   const decreaseItem = () => setCount((count) => (count > 1 ? count - 1 : 1));
   const categoryImages = {
     headphones: "/images/headphones/white/image-gallery-3.jpg",
-    speakers:
-      "../../public/images/speakers/product-zx7-speaker/image-gallery-3.jpg",
-    earphones:
-      "../../public/images/earphones/earphones-white/image-gallery-1.png",
+    speakers: "/images/speakers/product-zx7-speaker/image-gallery-3.jpg",
+    earphones: "/images/earphones/earphones-white/image-gallery-1.png",
   };
   const categoryImage = categoryImages[params.category];
 

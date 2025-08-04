@@ -38,7 +38,7 @@ export const Characteristics = () => {
           className="border-0 rounded-circle px-2"
         >
           <motion.img
-            src="../../../public/images/home/arrow.png"
+            src="/images/home/arrow.png"
             alt="arrow-down"
             width={10}
             initial={{ rotate: "0deg" }}
