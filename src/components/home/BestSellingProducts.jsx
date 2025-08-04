@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { Button } from "../Button/Button";
-import { HoverImages } from "../Images/hoverImages";
+import { HoverImages } from "../Images/HoverImages";
 import products from "../../products.json";
 import "swiper/css";
 import "swiper/css/pagination";
